@@ -1,0 +1,136 @@
+<!DOCTYPE html> 
+ <html lang="pt-br"> 
+  
+ <head> 
+     <link rel="preconnect" href="https://fonts.googleapis.com"> 
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+
+     <meta charset="UTF-8"> 
+     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+     <title>Formulário Mentoria</title> 
+
+     <link rel="stylesheet" href="style.css"> 
+     <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Staatliches&display=swap" rel="stylesheet"> 
+ </head> 
+  <!-- head deixa informações invisíveis ao site -->
+
+ <body> 
+
+     <div class="page"> 
+
+         <header> 
+             <h1>Mentoria</h1> 
+             <p>Preencha o formulário abaixo para agendar a sua mentoria</p> 
+         </header> 
+    <!-- header é o cabeçalho do site -->
+  
+  
+    <form id="form"> 
+
+    <fieldset> 
+       <div class="fieldset-wrapper"> 
+       <legend>Informações pessoais</legend> 
+  
+        <div class="usernames"> 
+        <div class="input-wrapper"> 
+        <label for="input-name">Nome</label> 
+        <input type="text" id="input-name" required> 
+        </div> 
+  
+        <div class="input-wrapper"> 
+        <label for="input-surname">Sobrenome</label> 
+        <input type="text" id="input-surname" required> 
+        </div> 
+        </div> 
+
+        <div class="input-wrapper"> 
+        <label for="input-email">Email <span>(digite um email válido)</span></label> 
+        <input type="email" id="input-email" required> 
+        </div> 
+        <div class="input-wrapper"> 
+        <label for="input-email">Senha <span>(mínimo de 6 caracteres)</span></label> 
+        <input type="password" minlength="6" id="input-password" required> 
+        </div> 
+        </div> 
+    </fieldset> 
+  
+    <fieldset> 
+    <div class="fieldset-wrapper"> 
+    <legend>Informações do mentor</legend> 
+  
+    <div class="input-wrapper"> 
+    <label for="input-mentor-name">Nome do seu mentor <span>(só o primeiro nome)</span></label><input type="text" id="input-mentor-name" required> 
+    </div> 
+
+    </div> 
+    </fieldset> 
+  
+   <fieldset> 
+   <div class="fieldset-wrapper"> 
+   <legend>Seus horários disponíveis</legend> 
+
+<h2>Primeira mentoria</h2> 
+<div class="col"> 
+  
+<div class="input-wrapper"> 
+<label for="input-date">Data<span>(DD/MM/AAAA)</span></label> 
+<input class="maior" type="date" id="input-date" required> 
+ </div> 
+ 
+ <div class="input-wrapper"> 
+<label for="input-time-first">Das</label> 
+ <input class="menor" type="time" id="input-time-first" required> 
+</div> 
+  
+<div class="input-wrapper"> 
+<label for="input-second-time">Até</label> 
+<input class="menor" type="time" id="input-second-time"> 
+</div> 
+
+ </div> 
+
+<h2>Segunda mentoria</h2> 
+<div class="col">
+
+ <div class="input-wrapper"> 
+ <label for="input-second-date">Data<span>(DD/MM/AAAA)</span></label> 
+<input class="maior" type="date" id="input-second-date"> 
+</div> 
+  
+<div class="input-wrapper">  
+<label for="input-time-first-one">Das</label> 
+<input class="menor" type="time" id="input-time-first-one"> 
+</div> 
+  
+<div class="input-wrapper">
+<label for="input-second-time-two">Até</label> 
+<input class="menor" type="time" id="input-second-time-two"> 
+ </div> 
+
+</div>
+
+</div> 
+</fieldset> 
+<!-- fieldset leva todo o conteúdo do formulário, onde leva div, label e inputs -->
+
+</form> 
+<!-- form é a página inteira do formulário -->
+         
+<footer> 
+             <input 
+             class="button"
+             form="form" 
+             type="submit"
+             value="Salvar"> 
+</footer> 
+<!-- footer é o rodapé do site -->
+
+</div> 
+<!-- essa div é uma caixa que contém a página inteira do site -->
+
+</body> 
+<!-- body é todo o corpo do site -->
+
+</html>
+<!-- html é a estrutura do site -->
